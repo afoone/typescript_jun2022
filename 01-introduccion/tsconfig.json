@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "removeComments": false,
+    "outDir": "dist"
+  },
+  "files": [
+    "tipos_primitivos.ts"
+  ]
+}
