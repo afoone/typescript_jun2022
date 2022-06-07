@@ -10,13 +10,13 @@ console.log(n);
 //n = 12n
 // Boleano
 var b = false;
-var a;
-a = 4.5;
-a = {
+var a2;
+a2 = 4.5;
+a2 = {
     a: 1
 };
-a = "kdsfj";
-console.log(a);
+a2 = "kdsfj";
+console.log(a2);
 // Arrays
 var nombres;
 nombres = ["pepe", "maria"];

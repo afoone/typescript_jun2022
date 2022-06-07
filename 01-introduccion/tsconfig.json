@@ -2,9 +2,14 @@
   "compilerOptions": {
     "module": "commonjs",
     "removeComments": false,
-    "outDir": "dist"
+    "outDir": "dist",
+    "target": "ES3",
   },
-  "files": [
-    "tipos_primitivos.ts"
+  "include": [
+    "src/**/*.ts" 
+  ], 
+  "exclude": [
+    "node_modules",
+    "**/*.test.ts"
   ]
 }

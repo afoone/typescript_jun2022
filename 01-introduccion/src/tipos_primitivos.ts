@@ -12,14 +12,14 @@ console.log(n)
 // Boleano
 let b: boolean = false
 
-let a: any;
-a = 4.5
-a = {
+let a2: any;
+a2 = 4.5
+a2 = {
     a: 1
 }
-a = "kdsfj"
+a2 = "kdsfj"
 
-console.log(a)
+console.log(a2)
 
 // Arrays
 let nombres : Array<string>
