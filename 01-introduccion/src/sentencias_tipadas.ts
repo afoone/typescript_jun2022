@@ -7,5 +7,19 @@ function f(param1: string, param2: number  = 0) : string | void {
     return "ksjdf"
 }
 
-f("hola", 4, 343)
+f("hola", 4)
+
+
+const cuadrado = (num: number):number => {
+    return num * num
+  }
+
+
+
+const f1 = () => {
+    for (let index: number = 0; index < 3; index++) {
+        console.log(index)
+    }
+
+}
 
