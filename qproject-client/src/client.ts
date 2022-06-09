@@ -16,21 +16,18 @@ type Turno = {
 
 app.version('0.0.1').description('API de cliente de colas')
 .option(
-    "-s --service <service>", "Servicio al que se quiere acceder",
+    "-s --servicio <servicio>", "Servicio al que se quiere acceder",
 ).action(
-        (options: {service: string}) => {
-            console.log(options)
+        (options: {servicio: string}) => {
             const turno: Partial<Turno> = {
-                servicio: options.service
+                servicio: options.servicio
             }
             axios.post<Turno>('http://localhost:4000/turnos', turno).then(
                 res => {
                     const turno_devuelto: Turno = res.data
-                    console.log(turno_devuelto)
+                    console.log(`Su turno es ${turno_devuelto.id}`)
                 }
             )
-            
-            console.log(turno)
         }
 )
 

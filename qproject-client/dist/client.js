@@ -5,15 +5,13 @@ var app = require('commander');
 // necesitaremos una acción que cree el turno , 
 // nos tendrá que indicar el servicio que quiere
 app.version('0.0.1').description('API de cliente de colas')
-    .option("-s --service <servicio>", "Servicio al que se quiere acceder").action(function (options) {
-    console.log(options);
+    .option("-s --servicio <servicio>", "Servicio al que se quiere acceder").action(function (options) {
     var turno = {
         servicio: options.servicio
     };
     axios_1["default"].post('http://localhost:4000/turnos', turno).then(function (res) {
         var turno_devuelto = res.data;
-        console.log(turno_devuelto);
+        console.log("Su turno es ".concat(turno_devuelto.id));
     });
-    console.log(turno);
 });
 app.parse(process.argv);
