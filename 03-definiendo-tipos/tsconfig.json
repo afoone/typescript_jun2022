@@ -4,7 +4,8 @@
     "removeComments": false,
     "outDir": "dist",
     "target": "ES2020",
-    "noImplicitAny": true
+    "noImplicitAny": true,
+    "sourceMap": true
   },
   "include": [
     "src/**/*.ts" 
