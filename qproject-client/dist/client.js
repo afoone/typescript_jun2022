@@ -15,3 +15,4 @@ app.version('0.0.1').description('API de cliente de colas')
     });
 });
 app.parse(process.argv);
+//# sourceMappingURL=client.js.map

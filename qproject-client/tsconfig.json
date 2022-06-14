@@ -4,6 +4,7 @@
     "removeComments": false,
     "outDir": "dist",
     "target": "ES3",
+    "sourceMap": true
   },
   "include": [
     "src/**/*.ts" 

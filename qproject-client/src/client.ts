@@ -1,14 +1,8 @@
 import axios from "axios"
+import { Turno } from "./model/client"
 const app = require('commander')
 
 
-// Crear un tipo para el turno
-// id, servicio, numero
-
-type Turno = {
-    servicio: string
-    id: number
-}
 
 // necesitaremos una acción que cree el turno , 
 // nos tendrá que indicar el servicio que quiere
